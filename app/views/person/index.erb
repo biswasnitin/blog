@@ -1,0 +1,24 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<%#= options_for_select([['Lisbon', 1], ['Madrid', 2]],2) %>
+
+
+
+<%#= select_tag(:city_id, options_for_select([['Lisbon', 1], ['Madrid', 2]],2)) %>
+
+
+<%#= collection_select(:book, :city_id, @books, :id, :name) %>
+
+<%#= form_tag({action: :upload}, multipart: true) do %>
+  <%#= file_field_tag 'picture' %>
+
+<%# end %>
+
+<%= form_for @person do |f| %>
+  <%= f.file_field :picture %>
+ <%= f.submit %>
+<%end %>
+
