@@ -32,12 +32,9 @@ development:
 #  host: localhost
 #
 production:
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
   reconnect: false
   database: mytest
   pool: 5
-  username: root
-  password: '0734'
-  host: 127.0.0.1
+  timeout: 5000
 
